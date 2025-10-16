@@ -7,11 +7,17 @@ public class Trap : MonoBehaviour
 {
     public UnityEvent trapTrigger;  // this is our trap event which we can assign methods to IN EDITOR
 
+    void Start()
+    {
+        trapTrigger.AddListener(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().TurnOffMovement);
+        trapTrigger.AddListener(GameObject.FindGameObjectWithTag("UIController").GetComponent<UIController>().TriggerLose);
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            trapTrigger.Invoke();  // we invoke the event here
+            trapTrigger?.Invoke();  // we invoke the event here
         }
     }
 }

@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            coinCollect.Invoke();  // we invoke the event here
+            coinCollect?.Invoke();  // we invoke the event here (? is for checking if coinCollect is not null)
             Destroy(gameObject);
         }
     }

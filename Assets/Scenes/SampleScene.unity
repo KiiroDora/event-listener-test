@@ -509,6 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93bbfd7a7f29824199540286c3b2016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canMove: 1
 --- !u!50 &226917244
 Rigidbody2D:
   serializedVersion: 4
@@ -545,13 +546,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 1356053384}
     m_Modifications:
     - target: {fileID: 93693236847701588, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
-      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
-      objectReference: {fileID: 226917239}
-    - target: {fileID: 93693236847701588, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
-      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 393418171}
+      objectReference: {fileID: 0}
     - target: {fileID: 2040957831631049573, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
       propertyPath: m_Name
       value: Trap (1)
@@ -680,7 +677,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 8, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &413653482
 GameObject:
@@ -718,7 +715,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 8, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413653484
 MonoBehaviour:
@@ -859,13 +856,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 1356053384}
     m_Modifications:
     - target: {fileID: 93693236847701588, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
-      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
-      objectReference: {fileID: 226917239}
-    - target: {fileID: 93693236847701588, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
-      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 393418171}
+      objectReference: {fileID: 0}
     - target: {fileID: 2040957831631049573, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
       propertyPath: m_Name
       value: Trap (4)
@@ -929,13 +922,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 1356053384}
     m_Modifications:
     - target: {fileID: 93693236847701588, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
-      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
-      objectReference: {fileID: 226917239}
-    - target: {fileID: 93693236847701588, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
-      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 393418171}
+      objectReference: {fileID: 0}
     - target: {fileID: 2040957831631049573, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
       propertyPath: m_Name
       value: Trap (2)
@@ -1473,6 +1462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2128556436}
   winScreen: {fileID: 413653482}
+  loseScreen: {fileID: 393418171}
   coinsNeededToWin: 8
 --- !u!1001 &1277578868
 PrefabInstance:
@@ -1483,13 +1473,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 1356053384}
     m_Modifications:
     - target: {fileID: 93693236847701588, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
-      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
-      objectReference: {fileID: 226917239}
-    - target: {fileID: 93693236847701588, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
-      propertyPath: trapTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 393418171}
+      objectReference: {fileID: 0}
     - target: {fileID: 2040957831631049573, guid: 8cccb8a9cfa73b2488c59f0b1acd97d0, type: 3}
       propertyPath: m_Name
       value: Trap (3)
